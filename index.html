@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -56,6 +57,79 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="open-menu-btn" data-menu-open>
+          <svg class="open-menu-icon" width="32px" height="22px">
+          <use href="./images/icons.svg#icon-mobile-menu"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="mobile-menu-container is-hidden" data-menu>
+        <div>
+        <button type="button" class="close-menu-btn" data-menu-close>
+          <svg class="close-menu-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close-back"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu-nav list">
+          <li class="mobile-menu-item">
+            <a href="./index.html" class="menu-nav-link link active-page"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./portfolio.html" class="menu-nav-link link">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item"><a href="" class="menu-nav-link link">Contacts</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="list address-menu-container">
+          <li>
+            <a href="tel:+110001111111" class="menu-tel link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="menu-mail link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="menu-soc-list list">
+          <li class="menu-soc-item">
+            <a href="" class="menu-soc-link link">
+              <svg class="menu-soc-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-soc-item">
+            <a href="" class="menu-soc-link link">
+              <svg class="menu-soc-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-soc-item">
+            <a href="" class="menu-soc-link link">
+              <svg class="menu-soc-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-soc-item">
+            <a href="" class="menu-soc-link link">
+              <svg class="menu-soc-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
     </header>
 
@@ -69,7 +143,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section feature">
         <div class="container">
           <h2 class="visually-hidden">feature</h2>
           <ul class="list feature-container">
@@ -132,6 +206,7 @@
           <ul class="list work-container">
             <li>
               <img
+                srcset="./images/doing1-2x.jpg 2x"
                 src="./images/doing1.jpg"
                 alt="Our projects"
                 width="360"
@@ -140,6 +215,7 @@
             </li>
             <li>
               <img
+                srcset="./images/doing2-2x.jpg 2x"
                 src="./images/doing2.jpg"
                 alt="Our projects"
                 width="360"
@@ -148,6 +224,7 @@
             </li>
             <li>
               <img
+                srcset="./images/doing3-2x.jpg 2x"
                 src="./images/doing3.jpg"
                 alt="Our projects"
                 width="360"
@@ -165,6 +242,7 @@
           <ul class="list card-container">
             <li class="card">
               <img
+                srcset="./images/mark-2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -173,7 +251,7 @@
               <div class="card-content">
                 <h3 class="team-names">Mark Guerrero</h3>
                 <p class="team-position">Product Designer</p>
-                <ul class="team-cos-list list">
+                <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
                       <svg class="team-soc-icon" width="16px" height="16px">
@@ -207,6 +285,7 @@
             </li>
             <li class="card">
               <img
+                srcset="./images/tom-2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -215,7 +294,7 @@
               <div class="card-content">
                 <h3 class="team-names">Tom Ford</h3>
                 <p class="team-position">Frontend Developer</p>
-                <ul class="team-cos-list list">
+                <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
                       <svg class="team-soc-icon" width="16px" height="16px">
@@ -250,6 +329,7 @@
             <li class="card">
               <img
                 src="./images/camila.jpg"
+                srcset="./images/camila-2x.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -257,7 +337,7 @@
               <div class="card-content">
                 <h3 class="team-names">Camila Garcia</h3>
                 <p class="team-position">Marketing</p>
-                <ul class="team-cos-list list">
+                <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
                       <svg class="team-soc-icon" width="16px" height="16px">
@@ -291,6 +371,7 @@
             </li>
             <li class="card">
               <img
+                srcset="./images/daniel-2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -299,7 +380,7 @@
               <div class="card-content">
                 <h3 class="team-names">Daniel Wilson</h3>
                 <p class="team-position">UI Designer</p>
-                <ul class="team-cos-list list">
+                <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
                       <svg class="team-soc-icon" width="16px" height="16px">
@@ -335,7 +416,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="customers section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -435,18 +516,19 @@
         <div class="footer-subscribe">
           <h3 class="footer-subscribe-title">Subscribe</h3>
           <form class="form-subscribe">
-          <input
-            type="text"
-            name="user-subscribe"
-            aria-lable="subscribe"
-            class="input-subscribe"
-            placeholder="E-mail"
-          />
-          <button type="submit" class="subscribe-btn">Subscribe
+            <input
+              type="text"
+              name="user-subscribe"
+              aria-lable="subscribe"
+              class="input-subscribe"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscribe-btn">
+              Subscribe
               <svg width="24px" height="24px" class="subscribe-icon">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
-          </button>
+            </button>
           </form>
         </div>
       </div>
@@ -537,8 +619,8 @@
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href=""> Privacy Policy </a>
+              <p>I accept the terms and conditions of the
+              <a href=""> Privacy Policy </a></p>
             </label>
           </div>
 
@@ -548,5 +630,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
